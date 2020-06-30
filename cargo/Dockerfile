@@ -3,4 +3,4 @@ WORKDIR /source
 
 COPY . .
 WORKDIR /source/app
-RUN cargo run --release --offline
+ENTRYPOINT [ "cargo" "run" "--release" "--offline" ]
